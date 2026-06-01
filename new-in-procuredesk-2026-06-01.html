@@ -1,0 +1,395 @@
+<!--
+================================================================================
+NEW IN PROCUREDESK — HTML COMPONENT LIBRARY
+================================================================================
+Monthly product newsletter for active ProcureDesk customers.
+Sender: Ashwath Madhusoodanan, Product Manager.
+
+COLOR PALETTE (matches The Desk — indigo):
+  Hero bg:        #1e1b4b
+  Hero border:    #312e81
+  Accent text:    #a5b4fc
+  Issue pill bg:  #1e1b4b  border: #312e81  text: #c7d2fe
+  Section bar:    #1F2937
+  Spotlight band: #1e1b4b
+  Location chip:  bg #312e81  text #c7d2fe
+  Badge:          bg #111827  border #374151  text #9CA3AF
+  Callout box:    bg #EEF2FF  border #4F46E5  text #3730A3
+  Grid cells:     bg #F9FAFB  border #E5E7EB
+  Grid label:     #4F46E5 uppercase small
+  CTA button:     bg #4F46E5  text #ffffff
+  Links:          #4F46E5
+  Dots:           #4F46E5
+  Checklist nums: bg #111827  text #9CA3AF
+  Avatar circle:  bg #374151
+  Up Next badge:  bg #374151  text #9CA3AF
+  CSM CTA bg:     #111827  button bg #4F46E5
+
+FIXED ELEMENTS (always present):
+  - Header (logo + issue pill)
+  - Hero (headline + date row)
+  - What Shipped This Month box
+  - Footer
+
+SECTION COMPONENTS — assemble in this fixed order:
+  [1] Feature Spotlight        — mandatory
+  [2] Set It Up This Week      — mandatory, always AFTER Spotlight, always BEFORE What's New
+  [3] What's New               — mandatory
+  [4] From the Product Manager — mandatory
+  [5] Quick Drops              — mandatory
+  [6] What's Coming            — mandatory
+  [7] Beta Access              — conditional (only when beta confirmed)
+  [8] CSM / Upgrade CTA        — mandatory, always last
+
+SECTION BAR (paste between every section):
+<tr><td style="background-color:#1F2937;padding:8px 28px;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;letter-spacing:2px;color:#9CA3AF;text-transform:uppercase;">&#9679; [SECTION NAME]</td></tr>
+
+PLACEHOLDERS use [BRACKET] format.
+UTM: utm_source=newsletter&utm_medium=email&utm_campaign=new-in-procuredesk-001&utm_content=[id]
+================================================================================
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>New in ProcureDesk #001</title>
+<style type="text/css">
+@media screen and (max-width: 600px) {
+  .ew { width: 100% !important; }
+  .h1 { font-size: 22px !important; line-height: 1.3 !important; }
+  .h2 { font-size: 18px !important; line-height: 1.3 !important; }
+  .gc { display: block !important; width: 100% !important; margin-bottom: 8px !important; }
+  .gs { display: none !important; }
+  .p  { padding-left: 20px !important; padding-right: 20px !important; }
+}
+</style>
+</head>
+<body style="margin:0;padding:0;background-color:#E5E7EB;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#E5E7EB;">
+<tr><td align="center" style="padding:20px 10px;">
+<table border="0" cellpadding="0" cellspacing="0" width="600" class="ew" style="background-color:#F9FAFB;max-width:600px;">
+
+
+<!-- ══ HEADER ══ -->
+<tr>
+  <td class="p" style="background-color:#111827;padding:16px 28px;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+      <td style="vertical-align:middle;"><img src="https://pedro-procuredesk.github.io/procuredesk-newsletter/ProcureDeskWhiteLogo.png" alt="ProcureDesk" width="140" height="22" style="display:block;" /></td>
+      <td align="right" style="vertical-align:middle;"><span style="background-color:#1e1b4b;border:1px solid #312e81;color:#c7d2fe;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;padding:4px 10px;border-radius:3px;letter-spacing:2px;white-space:nowrap;text-transform:uppercase;">NEW IN PROCUREDESK &nbsp;·&nbsp; #001</span></td>
+    </tr></table>
+  </td>
+</tr>
+
+
+<!-- ══ HERO ══ -->
+<tr>
+  <td class="p" style="background-color:#1e1b4b;padding:40px 28px 44px;border-bottom:2px solid #312e81;">
+    <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;letter-spacing:4px;color:#E5E7EB;text-transform:uppercase;">June 2026 &nbsp;·&nbsp; Product Release</p>
+    <h1 class="h1" style="margin:0 0 24px 0;font-family:Arial,sans-serif;font-size:28px;font-weight:900;color:#ffffff;line-height:1.2;">Seven updates built to <span style="color:#a5b4fc;">speed up your month-end close.</span></h1>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="border-top:1px solid #1F2937;padding-top:16px;">
+      <table border="0" cellpadding="0" cellspacing="0"><tr>
+        <td style="font-family:Arial,sans-serif;font-size:11px;color:#E5E7EB;padding-right:16px;">5-min read</td>
+        <td style="font-family:Arial,sans-serif;font-size:11px;color:#6B7280;padding-right:16px;">·</td>
+        <td style="font-family:Arial,sans-serif;font-size:11px;color:#E5E7EB;padding-right:16px;">The ProcureDesk Product Team</td>
+        <td style="font-family:Arial,sans-serif;font-size:11px;color:#6B7280;padding-right:16px;">·</td>
+        <td style="font-family:Arial,sans-serif;font-size:11px;color:#E5E7EB;">7 features</td>
+      </tr></table>
+    </td></tr></table>
+  </td>
+</tr>
+
+
+<!-- ══ WHAT SHIPPED THIS MONTH ══ -->
+<tr>
+  <td style="padding:24px 24px 0;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#ffffff;border:1px solid #E5E7EB;border-radius:4px;"><tr><td style="padding:18px 20px;">
+      <p style="margin:0 0 14px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;letter-spacing:3px;color:#6B7280;text-transform:uppercase;">In this release</p>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr><td style="padding:6px 0;border-bottom:1px solid #F3F4F6;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"><span style="color:#4F46E5;font-weight:bold;">1.&nbsp;&nbsp;</span><strong>Invoice Aging dashboard</strong> — act on overdue invoices without leaving the page</td></tr>
+        <tr><td style="padding:6px 0;border-bottom:1px solid #F3F4F6;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"><span style="color:#4F46E5;font-weight:bold;">2.&nbsp;&nbsp;</span><strong>Vendor Statement Matching</strong> — auto-reconcile vendor statements to your invoices</td></tr>
+        <tr><td style="padding:6px 0;border-bottom:1px solid #F3F4F6;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"><span style="color:#4F46E5;font-weight:bold;">3.&nbsp;&nbsp;</span><strong>Card Statement Matching</strong> — confirm every card transaction hit an expense</td></tr>
+        <tr><td style="padding:6px 0;border-bottom:1px solid #F3F4F6;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"><span style="color:#4F46E5;font-weight:bold;">4.&nbsp;&nbsp;</span><strong>Import Historical Contracts</strong> — bulk-import contracts and signed PDFs at once</td></tr>
+        <tr><td style="padding:6px 0;border-bottom:1px solid #F3F4F6;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"><span style="color:#4F46E5;font-weight:bold;">5.&nbsp;&nbsp;</span><strong>Purchase Request action view</strong> — a faster, task-first way to work requests</td></tr>
+        <tr><td style="padding:6px 0;border-bottom:1px solid #F3F4F6;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"><span style="color:#4F46E5;font-weight:bold;">6.&nbsp;&nbsp;</span><strong>Inventory Transaction History</strong> — a full audit trail of stock movements</td></tr>
+        <tr><td style="padding:6px 0;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"><span style="color:#4F46E5;font-weight:bold;">7.&nbsp;&nbsp;</span><strong>Vendor remittance emails</strong> — vendors auto-notified the day they’re paid</td></tr>
+      </table>
+    </td></tr></table>
+  </td>
+</tr>
+<tr><td style="background-color:#F9FAFB;padding:20px 24px 0;"></td></tr>
+
+
+<!-- ══ [1] FEATURE SPOTLIGHT ══
+     Mandatory. One feature only.
+     Remove 2x2 grid if feature doesn't have a 4-part structure — replace with extra paragraph. -->
+<tr><td style="background-color:#1F2937;padding:8px 28px;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;letter-spacing:2px;color:#9CA3AF;text-transform:uppercase;">&#9679; Feature Spotlight</td></tr>
+<tr><td style="background-color:#ffffff;">
+  <!-- Dark band -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td class="p" style="background-color:#1e1b4b;padding:32px 28px;">
+    <table border="0" cellpadding="0" cellspacing="0"><tr><td style="padding-bottom:14px;">
+      <span style="background-color:#111827;border:1px solid #374151;color:#9CA3AF;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;padding:4px 10px;border-radius:3px;letter-spacing:1.5px;text-transform:uppercase;">📊 Aging Dashboard · Enhanced</span>
+    </td></tr></table>
+    <h2 class="h2" style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:22px;font-weight:900;color:#ffffff;line-height:1.25;">The Invoice Aging dashboard now acts, not just reports</h2>
+    <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:14px;color:#a5b4fc;line-height:1.6;">See what’s overdue, drill into it, and pay it — all from one screen.</p>
+    <span style="background-color:#312e81;color:#c7d2fe;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;padding:5px 12px;border-radius:3px;letter-spacing:0.5px;">Pay › Invoices › Aging</span>
+  </td></tr></table>
+  <!-- Body -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td class="p" style="padding:26px 28px;">
+    <p style="margin:0 0 14px 0;font-family:Arial,sans-serif;font-size:14px;color:#374151;line-height:1.75;">Until now, the Aging dashboard could tell you what was overdue — but the moment you wanted to do something about it, you had to leave the page, find the invoice, and start over. The reporting and the acting lived in two different places.</p>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:18px 0;"><tr><td style="background-color:#EEF2FF;border-left:3px solid #4F46E5;padding:14px 18px;font-family:Arial,sans-serif;font-size:13px;color:#3730A3;font-style:italic;line-height:1.7;">"I can see what’s overdue, narrow it to one supplier, and pay it without opening another screen."</td></tr></table>
+    <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:14px;color:#374151;line-height:1.75;">Two widgets now sit above the invoice table and stay in sync with it. Aging Buckets group everything unpaid by how overdue it is; Supplier Exposure shows who you owe the most, scoped to whatever bucket you’ve clicked. Combine the two to drill into something specific, then mark invoices paid or build a payment batch right from the dashboard.</p>
+    <!-- 2x2 capability grid — remove entire table if not applicable -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:18px 0;">
+      <tr>
+        <td class="gc" width="48%" style="background-color:#F9FAFB;border:1px solid #E5E7EB;border-radius:4px;padding:16px;vertical-align:top;">
+          <div style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;color:#4F46E5;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;">Aging buckets</div>
+          <div style="font-family:Arial,sans-serif;font-size:12px;color:#4B5563;line-height:1.6;">Unpaid invoices grouped by due date — Overdue, 0–7, 7–14, 14–30, 30+ days — with the total payable in each.</div>
+        </td>
+        <td class="gs" width="4%">&nbsp;</td>
+        <td class="gc" width="48%" style="background-color:#F9FAFB;border:1px solid #E5E7EB;border-radius:4px;padding:16px;vertical-align:top;">
+          <div style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;color:#4F46E5;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;">Supplier exposure</div>
+          <div style="font-family:Arial,sans-serif;font-size:12px;color:#4B5563;line-height:1.6;">Your largest unpaid balances, scoped to whichever aging bucket you’ve selected.</div>
+        </td>
+      </tr>
+      <tr><td colspan="3" height="8"></td></tr>
+      <tr>
+        <td class="gc" width="48%" style="background-color:#F9FAFB;border:1px solid #E5E7EB;border-radius:4px;padding:16px;vertical-align:top;">
+          <div style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;color:#4F46E5;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;">Synced filters</div>
+          <div style="font-family:Arial,sans-serif;font-size:12px;color:#4B5563;line-height:1.6;">Pick a bucket and a supplier together to drill to something like “Amazon invoices due in the next 7 days.”</div>
+        </td>
+        <td class="gs" width="4%">&nbsp;</td>
+        <td class="gc" width="48%" style="background-color:#F9FAFB;border:1px solid #E5E7EB;border-radius:4px;padding:16px;vertical-align:top;">
+          <div style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;color:#4F46E5;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;">Pay from the dashboard</div>
+          <div style="font-family:Arial,sans-serif;font-size:12px;color:#4B5563;line-height:1.6;">Select invoices and mark them paid or create a payment batch without switching screens.</div>
+        </td>
+      </tr>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0"><tr><td style="background-color:#4F46E5;border-radius:4px;padding:11px 20px;">
+      <a href="mailto:support@procuredesk.com?utm_source=newsletter&utm_medium=email&utm_campaign=new-in-procuredesk-001&utm_content=spotlight-cta" style="font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#ffffff;text-decoration:none;">&#8594;&nbsp; Questions about the Aging dashboard? Email support</a>
+    </td></tr></table>
+  </td></tr></table>
+</td></tr>
+
+
+<!-- ══ [2] SET IT UP THIS WEEK ══
+     Mandatory. Always AFTER Spotlight. Always BEFORE What's New.
+     5 numbered items. Based only on features in this edition. -->
+<tr><td style="background-color:#1F2937;padding:8px 28px;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;letter-spacing:2px;color:#9CA3AF;text-transform:uppercase;">&#9679; Set It Up This Week</td></tr>
+<tr><td class="p" style="background-color:#ffffff;padding:26px 28px;">
+  <p style="margin:0 0 4px 0;font-family:Arial,sans-serif;font-size:16px;font-weight:900;color:#111827;">5 things you can activate before Friday</p>
+  <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:13px;color:#6B7280;line-height:1.6;">These features are live in your account. Most take under 10 minutes to enable. Here's where to start.</p>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr><td style="padding:10px 0;border-bottom:1px solid #F3F4F6;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+      <td width="28" style="vertical-align:top;padding-top:2px;"><span style="background-color:#111827;color:#9CA3AF;font-family:Arial,sans-serif;font-size:10px;font-weight:900;padding:2px 6px;border-radius:3px;letter-spacing:0.5px;">01</span></td>
+      <td style="padding-left:12px;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.65;"><strong>Drill into the upgraded Aging dashboard.</strong> Go to Pay → Invoices → Aging, click an aging bucket, then a supplier, and mark an invoice paid or build a payment batch right there.</td>
+    </tr></table></td></tr>
+    <tr><td style="padding:10px 0;border-bottom:1px solid #F3F4F6;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+      <td width="28" style="vertical-align:top;padding-top:2px;"><span style="background-color:#111827;color:#9CA3AF;font-family:Arial,sans-serif;font-size:10px;font-weight:900;padding:2px 6px;border-radius:3px;letter-spacing:0.5px;">02</span></td>
+      <td style="padding-left:12px;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.65;"><strong>Switch Purchase Requests to the action view.</strong> On the Purchase Requests page, toggle from the table to the new dashboard view to see open requests, frequent items, and your tasks at a glance.</td>
+    </tr></table></td></tr>
+    <tr><td style="padding:10px 0;border-bottom:1px solid #F3F4F6;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+      <td width="28" style="vertical-align:top;padding-top:2px;"><span style="background-color:#111827;color:#9CA3AF;font-family:Arial,sans-serif;font-size:10px;font-weight:900;padding:2px 6px;border-radius:3px;letter-spacing:0.5px;">03</span></td>
+      <td style="padding-left:12px;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.65;"><strong>Pin your favourite vendors and frequent items.</strong> In that new request view, set your punch-out vendors and commonly ordered items so re-ordering is one click next time.</td>
+    </tr></table></td></tr>
+    <tr><td style="padding:10px 0;border-bottom:1px solid #F3F4F6;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+      <td width="28" style="vertical-align:top;padding-top:2px;"><span style="background-color:#111827;color:#9CA3AF;font-family:Arial,sans-serif;font-size:10px;font-weight:900;padding:2px 6px;border-radius:3px;letter-spacing:0.5px;">04</span></td>
+      <td style="padding-left:12px;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.65;"><strong>Open an item’s transaction history.</strong> Under Inventory → Item Details, check the new Transaction History table — every receipt, release, adjustment, and transfer with a running balance.</td>
+    </tr></table></td></tr>
+    <tr><td style="padding:10px 0;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+      <td width="28" style="vertical-align:top;padding-top:2px;"><span style="background-color:#111827;color:#9CA3AF;font-family:Arial,sans-serif;font-size:10px;font-weight:900;padding:2px 6px;border-radius:3px;letter-spacing:0.5px;">05</span></td>
+      <td style="padding-left:12px;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.65;"><strong>Confirm vendor payment emails are on.</strong> In Settings → Email Notifications → Vendor → Payment Notifications, check the daily remittance email is enabled (it’s on by default).</td>
+    </tr></table></td></tr>
+  </table>
+  <p style="margin:16px 0 0 0;font-family:Arial,sans-serif;font-size:12px;color:#9CA3AF;line-height:1.5;padding:12px 14px;background-color:#F9FAFB;border:1px solid #E5E7EB;border-radius:4px;">Need help configuring any of these? <a href="mailto:support@procuredesk.com?utm_source=newsletter&utm_medium=email&utm_campaign=new-in-procuredesk-001&utm_content=checklist-support" style="color:#4F46E5;font-weight:bold;text-decoration:none;">Email our support team &#8594;</a></p>
+</td></tr>
+
+
+<!-- ══ [3] WHAT'S NEW ══
+     Mandatory. Always AFTER checklist.
+     One card per additional feature. Duplicate card table per feature. Max 6 cards.
+     Each card: emoji icon + module label + feature name + description + Loom link. -->
+<tr><td style="background-color:#1F2937;padding:8px 28px;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;letter-spacing:2px;color:#9CA3AF;text-transform:uppercase;">&#9679; What's New</td></tr>
+<tr><td class="p" style="background-color:#ffffff;padding:26px 28px;">
+  <p style="margin:0 0 4px 0;font-family:Arial,sans-serif;font-size:16px;font-weight:900;color:#111827;">The rest of what shipped this month</p>
+  <p style="margin:0 0 20px 0;font-family:Arial,sans-serif;font-size:13px;color:#6B7280;line-height:1.6;">Six more updates this month — each one changes how a specific part of the workflow behaves.</p>
+
+  <!-- Feature card — duplicate this table per feature. Last card has no margin-bottom. -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:10px;background-color:#F9FAFB;border:1px solid #E5E7EB;border-radius:4px;">
+    <tr>
+      <td width="56" style="padding:16px;vertical-align:top;text-align:center;">
+        <div style="background-color:#EEF2FF;border-radius:4px;width:36px;height:36px;font-size:18px;line-height:36px;text-align:center;">💰</div>
+      </td>
+      <td style="padding:16px 16px 16px 0;vertical-align:top;">
+        <p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2px;color:#6B7280;text-transform:uppercase;">Pay · Statement Matching</p>
+        <p style="margin:0 0 7px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#111827;">Vendor Statement Matching</p>
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6B7280;line-height:1.65;">Upload a vendor statement — Excel, CSV, or PDF — and ProcureDesk matches each line against the supplier invoices already in the system, flagging anything that doesn’t reconcile. PDF statements are read with OCR, so there’s no manual re-keying, and you can export the results to Excel for audit. Available on request — email support@procuredesk.com to switch it on. <a href="https://www.loom.com/share/aefddeb4200442e49396f0b0c704b869?utm_source=newsletter&utm_medium=email&utm_campaign=new-in-procuredesk-001&utm_content=feature-1-loom" style="color:#4F46E5;font-weight:bold;text-decoration:none;">Watch the walkthrough &#8594;</a></p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Feature card 2 — remove if not needed -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:10px;background-color:#F9FAFB;border:1px solid #E5E7EB;border-radius:4px;">
+    <tr>
+      <td width="56" style="padding:16px;vertical-align:top;text-align:center;">
+        <div style="background-color:#EEF2FF;border-radius:4px;width:36px;height:36px;font-size:18px;line-height:36px;text-align:center;">💳</div>
+      </td>
+      <td style="padding:16px 16px 16px 0;vertical-align:top;">
+        <p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2px;color:#6B7280;text-transform:uppercase;">Expenses · Card Statement Matching</p>
+        <p style="margin:0 0 7px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#111827;">Credit Card Statement Matching</p>
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6B7280;line-height:1.65;">Upload a credit card statement (CSV or Excel) and every transaction is matched to an existing expense and tagged Exact Match, Partial Match, or Missing, so gaps are obvious. Filter by status to work through big monthly statements fast, then export the results with their matched expense references. Same workflow as vendor statements; email support@procuredesk.com to enable it. <a href="https://www.loom.com/share/96fb6cc0f4974de9b40f8da9049f4d2f?utm_source=newsletter&utm_medium=email&utm_campaign=new-in-procuredesk-001&utm_content=feature-2-loom" style="color:#4F46E5;font-weight:bold;text-decoration:none;">Watch the walkthrough &#8594;</a></p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Feature card 3 — remove if not needed -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:10px;background-color:#F9FAFB;border:1px solid #E5E7EB;border-radius:4px;">
+    <tr>
+      <td width="56" style="padding:16px;vertical-align:top;text-align:center;">
+        <div style="background-color:#EEF2FF;border-radius:4px;width:36px;height:36px;font-size:18px;line-height:36px;text-align:center;">📋</div>
+      </td>
+      <td style="padding:16px 16px 16px 0;vertical-align:top;">
+        <p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2px;color:#6B7280;text-transform:uppercase;">Contracts · Bulk Import</p>
+        <p style="margin:0 0 7px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#111827;">Import Historical Contracts</p>
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6B7280;line-height:1.65;">Bring your whole contract library in at once: upload a CSV/XLS of contract details plus a ZIP of the signed PDFs, and ProcureDesk maps each PDF to its record by filename. Anything with missing or mismatched data lands in draft with the gaps flagged, so nothing fails silently. Want a hand migrating your contracts? Email support@procuredesk.com. <a href="https://www.loom.com/share/afd95af70a3b4499a46dd2b5243383fd?utm_source=newsletter&utm_medium=email&utm_campaign=new-in-procuredesk-001&utm_content=feature-3-loom" style="color:#4F46E5;font-weight:bold;text-decoration:none;">Watch the walkthrough &#8594;</a></p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Feature card (written-only, no Loom) -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:10px;background-color:#F9FAFB;border:1px solid #E5E7EB;border-radius:4px;">
+    <tr>
+      <td width="56" style="padding:16px;vertical-align:top;text-align:center;">
+        <div style="background-color:#EEF2FF;border-radius:4px;width:36px;height:36px;font-size:18px;line-height:36px;text-align:center;">🛒</div>
+      </td>
+      <td style="padding:16px 16px 16px 0;vertical-align:top;">
+        <p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2px;color:#6B7280;text-transform:uppercase;">Purchase Requests · Action View</p>
+        <p style="margin:0 0 7px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#111827;">Purchase Request action view</p>
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6B7280;line-height:1.65;">Toggle the Purchase Requests page from the standard table to a new action-focused view built around what needs doing — open requests, your pending tasks, frequently ordered items, and favourite vendors, each in its own widget. Less filtering, faster re-ordering. Find it via the table/dashboard toggle on the Purchase Requests page.</p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Feature card (written-only, no Loom) -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:10px;background-color:#F9FAFB;border:1px solid #E5E7EB;border-radius:4px;">
+    <tr>
+      <td width="56" style="padding:16px;vertical-align:top;text-align:center;">
+        <div style="background-color:#EEF2FF;border-radius:4px;width:36px;height:36px;font-size:18px;line-height:36px;text-align:center;">📦</div>
+      </td>
+      <td style="padding:16px 16px 16px 0;vertical-align:top;">
+        <p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2px;color:#6B7280;text-transform:uppercase;">Inventory · Item Details</p>
+        <p style="margin:0 0 7px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#111827;">Inventory Transaction History</p>
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6B7280;line-height:1.65;">Every item now carries a chronological ledger of all stock movements — receipts, releases, adjustments, and transfers — each with who did it, quantity in or out, and a running balance, so you can see exactly when and why a level changed. It’s read-only and audit-friendly. Find it under Inventory → Item Details.</p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Feature card (written-only, no Loom) -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#F9FAFB;border:1px solid #E5E7EB;border-radius:4px;">
+    <tr>
+      <td width="56" style="padding:16px;vertical-align:top;text-align:center;">
+        <div style="background-color:#EEF2FF;border-radius:4px;width:36px;height:36px;font-size:18px;line-height:36px;text-align:center;">📧</div>
+      </td>
+      <td style="padding:16px 16px 16px 0;vertical-align:top;">
+        <p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2px;color:#6B7280;text-transform:uppercase;">Settings · Vendor Notifications</p>
+        <p style="margin:0 0 7px 0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#111827;">Automatic vendor remittance emails</p>
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6B7280;line-height:1.65;">Every day at 6pm ET, ProcureDesk emails each vendor a single consolidated summary of the invoices you paid them that day — one message, never one per invoice — whether the payment was marked manually or synced from QuickBooks or NetSuite. Fewer “has this been paid?” emails for your AP team. Toggle it in Settings → Email Notifications → Vendor → Payment Notifications (on by default).</p>
+      </td>
+    </tr>
+  </table>
+</td></tr>
+
+
+<!-- ══ [4] FROM THE PRODUCT MANAGER ══
+     Mandatory. Based on PM note from content template. Never invented. -->
+<tr><td style="background-color:#1F2937;padding:8px 28px;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;letter-spacing:2px;color:#9CA3AF;text-transform:uppercase;">&#9679; From the Product Manager</td></tr>
+<tr><td class="p" style="background-color:#ffffff;padding:26px 28px;">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#F9FAFB;border:1px solid #E5E7EB;border-radius:4px;"><tr><td style="padding:22px;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:16px;"><tr>
+      <td width="40" style="vertical-align:top;"><table border="0" cellpadding="0" cellspacing="0"><tr><td style="background-color:#374151;border-radius:50%;width:36px;height:36px;text-align:center;vertical-align:middle;font-family:Arial,sans-serif;font-size:15px;font-weight:900;color:#ffffff;" width="36" height="36">A</td></tr></table></td>
+      <td style="padding-left:12px;vertical-align:middle;">
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#111827;">Ashwath Madhusoodanan</p>
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:11px;color:#6B7280;">Product Manager, ProcureDesk</p>
+      </td>
+    </tr></table>
+    <p style="margin:0 0 14px 0;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.75;font-style:italic;">⚠ PM note pending — replace this line with Ashwath’s 3–5 sentences before publishing. (You can lift a few lines from the LinkedIn draft if he’s happy with it.)</p>
+  </td></tr></table>
+</td></tr>
+
+
+<!-- ══ [5] QUICK DROPS ══
+     Mandatory. 3 helpful links for the release — Looms, direct product links, help docs.
+     Never duplicate CTAs already in Spotlight or What's New cards. -->
+<tr><td style="background-color:#1F2937;padding:8px 28px;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;letter-spacing:2px;color:#9CA3AF;text-transform:uppercase;">&#9679; Quick Drops</td></tr>
+<tr><td class="p" style="background-color:#ffffff;padding:26px 28px;">
+  <p style="margin:0 0 18px 0;font-family:Arial,sans-serif;font-size:15px;font-weight:bold;color:#111827;">Helpful links for this release</p>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr><td style="padding:11px 0;border-bottom:1px solid #F3F4F6;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+      <td width="12" style="vertical-align:top;padding-top:6px;"><span style="display:inline-block;width:6px;height:6px;background-color:#4F46E5;border-radius:50%;"></span></td>
+      <td style="padding-left:12px;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.65;"><a href="https://www.loom.com/share/56891c0621134898a12b0801aa1799b0?utm_source=newsletter&utm_medium=email&utm_campaign=new-in-procuredesk-001&utm_content=drop-1" style="color:#4F46E5;font-weight:bold;text-decoration:none;">Invoice Aging Dashboard — Walkthrough</a>: A short tour of the new buckets, supplier exposure, and paying straight from the dashboard.</td>
+    </tr></table></td></tr>
+    <tr><td style="padding:11px 0;border-bottom:1px solid #F3F4F6;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+      <td width="12" style="vertical-align:top;padding-top:6px;"><span style="display:inline-block;width:6px;height:6px;background-color:#4F46E5;border-radius:50%;"></span></td>
+      <td style="padding-left:12px;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.65;"><a href="https://www.procuredesk.com/features?utm_source=newsletter&utm_medium=email&utm_campaign=new-in-procuredesk-001&utm_content=drop-2" style="color:#4F46E5;font-weight:bold;text-decoration:none;">All ProcureDesk features</a>: A refresher on everything in your account — useful when you’re onboarding a new admin.</td>
+    </tr></table></td></tr>
+    <tr><td style="padding:11px 0;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+      <td width="12" style="vertical-align:top;padding-top:6px;"><span style="display:inline-block;width:6px;height:6px;background-color:#4F46E5;border-radius:50%;"></span></td>
+      <td style="padding-left:12px;font-family:Arial,sans-serif;font-size:13px;color:#374151;line-height:1.65;"><a href="mailto:support@procuredesk.com?utm_source=newsletter&utm_medium=email&utm_campaign=new-in-procuredesk-001&utm_content=drop-3" style="color:#4F46E5;font-weight:bold;text-decoration:none;">Enable a feature for your account</a>: Email support to turn on Statement Matching, Card Statement Matching, or bulk contract import.</td>
+    </tr></table></td></tr>
+  </table>
+</td></tr>
+
+
+<!-- ══ [6] WHAT'S COMING ══
+     Mandatory. 1-2 sentence teaser only. No unconfirmed dates or feature names. -->
+<tr><td style="background-color:#1F2937;padding:8px 28px;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;letter-spacing:2px;color:#9CA3AF;text-transform:uppercase;">&#9679; What's Coming</td></tr>
+<tr><td class="p" style="background-color:#ffffff;padding:26px 28px;">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#F9FAFB;border:1px solid #E5E7EB;border-radius:4px;"><tr>
+    <td width="52" style="padding:18px 0 18px 18px;vertical-align:top;">
+      <table border="0" cellpadding="0" cellspacing="0"><tr><td style="background-color:#374151;border-radius:3px;padding:6px 8px;font-family:Arial,sans-serif;font-size:9px;font-weight:900;color:#9CA3AF;text-align:center;text-transform:uppercase;line-height:1.4;letter-spacing:1px;">Up<br/>Next</td></tr></table>
+    </td>
+    <td style="padding:18px;">
+      <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:14px;font-weight:bold;color:#111827;">On the roadmap for next release</p>
+      <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#374151;line-height:1.65;">⚠ Roadmap teaser pending — add a 1–2 sentence preview of the next release before publishing.</p>
+    </td>
+  </tr></table>
+</td></tr>
+
+
+<!-- ══ [8] CSM / UPGRADE CTA ══
+     Mandatory. Always last before footer. Never remove. -->
+<tr>
+  <td class="p" style="background-color:#111827;padding:36px 28px;text-align:center;border-top:2px solid #1F2937;">
+    <p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;letter-spacing:3px;color:#4B5563;text-transform:uppercase;">Get more from this release</p>
+    <h3 style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:22px;font-weight:900;color:#ffffff;line-height:1.3;">Turn on statement matching</h3>
+    <p style="margin:0 0 24px 0;font-family:Arial,sans-serif;font-size:13px;color:#6B7280;line-height:1.7;max-width:380px;margin-left:auto;margin-right:auto;">Vendor and card statement matching can be enabled for your account — a quick note to support gets you set up and reconciling in minutes.</p>
+    <table border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;"><tr><td style="background-color:#4F46E5;border-radius:4px;padding:13px 28px;">
+      <a href="mailto:support@procuredesk.com?utm_source=newsletter&utm_medium=email&utm_campaign=new-in-procuredesk-001&utm_content=upgrade-cta" style="font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#ffffff;text-decoration:none;">&#8594;&nbsp; Email support to get set up</a>
+    </td></tr></table>
+    <p style="margin:12px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:#374151;">No prep needed &nbsp;·&nbsp; 30 minutes or less</p>
+  </td>
+</tr>
+
+
+<!-- ══ FOOTER ══ -->
+<tr>
+  <td class="p" style="background-color:#111827;padding:24px 28px 28px;text-align:center;border-top:1px solid #1F2937;">
+    <img src="https://pedro-procuredesk.github.io/procuredesk-newsletter/ProcureDeskWhiteLogo.png" alt="ProcureDesk" width="140" height="22" style="display:block;margin:0 auto 14px;" />
+    <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:12px;color:#374151;line-height:1.7;">Monthly product updates for ProcureDesk customers.<br/>What shipped, what it does, and how to use it.</p>
+    <table border="0" cellpadding="0" cellspacing="0" align="center" style="margin-bottom:18px;"><tr>
+      <td style="padding:0 8px;"><a href="https://www.procuredesk.com/contact?utm_source=newsletter&utm_medium=email&utm_campaign=new-in-procuredesk-001&utm_content=footer-contact" style="font-family:Arial,sans-serif;font-size:11px;color:#4B5563;text-decoration:none;">Contact CSM</a></td>
+      <td style="color:#374151;font-size:11px;">·</td>
+      <td style="padding:0 8px;"><a href="https://www.procuredesk.com/features?utm_source=newsletter&utm_medium=email&utm_campaign=new-in-procuredesk-001&utm_content=footer-features" style="font-family:Arial,sans-serif;font-size:11px;color:#4B5563;text-decoration:none;">Features</a></td>
+      <td style="color:#374151;font-size:11px;">·</td>
+      <td style="padding:0 8px;"><a href="https://www.procuredesk.com?utm_source=newsletter&utm_medium=email&utm_campaign=new-in-procuredesk-001&utm_content=footer-website" style="font-family:Arial,sans-serif;font-size:11px;color:#4B5563;text-decoration:none;">Website</a></td>
+    </tr></table>
+    <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;color:#374151;line-height:1.6;">You're receiving this as a ProcureDesk customer.<br/><a href="#" style="color:#374151;text-decoration:underline;">Unsubscribe</a> &nbsp;·&nbsp; <a href="#" style="color:#374151;text-decoration:underline;">Update preferences</a></p>
+  </td>
+</tr>
+
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
